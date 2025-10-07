@@ -7,3 +7,6 @@ Using simple tools like [UIverse](https://uiverse.io/), we can make this possibl
 ## AI Code In This Repository: ```0%```
 
 Any questions?  Create an [Issue](https://github.com/FLGM-OG/Landing-Mockup/issues) or a [Pull Request](https://github.com/FLGM-OG/Landing-Mockup/pulls)
+
+## Screenshot from the [Demo Page](https://flgm-landing-mockup.vercel.app)
+![Theres supposed to be an image here,,,](IGNORE/ex.png)
