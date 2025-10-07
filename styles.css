@@ -1,4 +1,5 @@
 /* Styling for index.html */
+/* FLGM-OG Styling */
 * { /* Styling reset so nothing messes up */
   margin: 0;
   padding: 0;
@@ -33,7 +34,8 @@ p {
   animation: fadeInUp 1.2s ease-out .8s forwards;
   line-height: 1.6;
 }
-
+/* END FLGM-OG Styling */
+/* UIverse Button Styling */
 .neu-button {
   background: #e0e0e0;
   border-radius: 50px;
@@ -70,3 +72,4 @@ p {
     transform: translateY(0);
   }
 }
+/* END UIverse Button Styling */
