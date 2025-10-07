@@ -5,32 +5,35 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body { /* <html> tag and <body> tag styling in one */
   height: 100%; /* Full Screen */
   font-family: 'Segoe UI'; 
-  background: white; /* Can use words or color hex codes */
+  background: #ffffff; /* Can use words or color hex codes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
 }
-
 h1 {
   font-size: clamp(3.5rem, 8vw, 7rem);
   font-weight: 300;
   letter-spacing: -.02em;
   color: black;
-  margin-bottom: 400;
+  margin-bottom: 2rem;
   opacity: 0;
-  transform: translateY(30px) /* Simple loading animation */
+  transform: translateY(30px); /* Simple loading animation */
   animation: fadeInUp 1.2s ease-out .8s forwards;
   line-height: 1.6;
 }
-
 p {
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   color: #94a3b8;
   font-weight: 400;
   margin-bottom: 3rem;
   opacity: 0;
-  transform: translateY(30px) /* Simple loading animation again */
+  transform: translateY(30px); /* Simple loading animation again */
   animation: fadeInUp 1.2s ease-out .8s forwards;
   line-height: 1.6;
 }
@@ -39,33 +42,30 @@ p {
 .neu-button {
   background: #e0e0e0;
   border-radius: 50px;
-  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px -10px #fff;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #fff;
   color: #4d4d4d;
   cursor: pointer;
   font-size: 18px;
   padding: 15px 40px;
-  transition: all .3 ease-in-out;
+  transition: all .3s ease-in-out;
   border: 2px solid #cecece;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInUpButton 1s ease forwards
+  animation: fadeInUpButton 1s ease forwards;
   animation-delay: 1.2s;
   text-decoration: none;
 }
-
 .neu-button:hover, .neu-button:focus {
-  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px-2px 5px #fff, 2px 2px 5px #bcbcbc, -2px -2px 5px #fff, inset 0 0 0 4px #ef476f, inset 0 0 0 8px #ffd166, inset 0 0 0 4px #06d6a0, inset 0 0 0 8px #118ab2;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #fff, 2px 2px 5px #bcbcbc, -2px -2px 5px #fff, inset 0 0 0 4px #ef476f, inset 0 0 0 8px #ffd166, inset 0 0 0 12px #06d6a0, inset 0 0 0 16px #118ab2;
   background: #073b4c;
   color: #fff;
 }
-
 @keyframes fadeInUp { /* make actual animation stuff work */
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 @keyframes fadeInUpButton { 
   to {
     opacity: 1;
